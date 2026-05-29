@@ -1,9 +1,13 @@
 A)Directory Summary-
 
   src/              — environment, training, evaluation code
+  
   models/           — pre-trained SAC model + replay buffer
+  
   results/plots/    — tracking error plots, 3D trajectory, workspace
+  
   results/videos/   — demo video
+  
   mujoco_menagerie-main/  — Franka Panda MuJoCo model
 
 B)Instructions-
@@ -12,7 +16,7 @@ B)Instructions-
 
   1. Clone the repository:
 
-  --git clone https://github.com/HaloDrive-101/rl_traj_proj
+  --git clone https://github.com/HaloDrive-101/3D-End-Effector-Tracking-Franka.git
 
   --cd rl_traj_proj
 
@@ -134,7 +138,7 @@ C)Technical Notes-
 
    Around these steady-state mean errors, the standard tracking error remains low, varying between 0.52–0.58 cm for the noisy case and staying constant at 0.48 cm for the clean case, demonstrating consistent and repeatable performance despite disturbances.
 
-D) Code Example Output [Running evaluate.py code for analysis] - 
+D)Code Example Output [Running evaluate.py code for analysis] - 
 
    (rl_env) C:\Users\abhig\rl_project>python evaluate.py
    Loading robust model...
