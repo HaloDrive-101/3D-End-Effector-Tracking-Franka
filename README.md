@@ -16,17 +16,15 @@ B) Instructions-
 
   1. Clone the repository:
 
-  --git clone https://github.com/HaloDrive-101/3D-End-Effector-Tracking-Franka.git
-
-  --cd rl_traj_proj
+    git clone https://github.com/HaloDrive-101/3D-End-Effector-Tracking-Franka.git
 
   2. Install dependencies:
 
-  --pip install -r requirements.txt
+    pip install -r requirements.txt
 
   3. Run evaluation (uses pre-trained model):
 
-  --python src/evaluate.py
+    python src/evaluate.py
 
   This opens the MuJoCo viewer showing the arm tracking the figure-eight shape, then saves plots to `results/plots/`.
 
@@ -34,15 +32,15 @@ B) Instructions-
 
      For visualizing the trajectory in the Franka workspace:
 
-  --python src/map_workspace.py   (also generates franka_workspace_hull.pkl)
+    python src/map_workspace.py   (also generates franka_workspace_hull.pkl)
 
    Wait few minutes for workspace sampling to complete.
 
-  --python src/plot_workspace.py
+    python src/plot_workspace.py
 
    Edit the file name for the new model and buffer in src/train_traj_sac.py
 
-  --python src/train_traj_sac.py
+    python src/train_traj_sac.py
 
    Training runs for 1M steps (~6-7 hours on my CPU). Model saved to `models/YOUR_FILENAME`.
 
